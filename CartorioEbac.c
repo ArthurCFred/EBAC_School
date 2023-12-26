@@ -62,8 +62,7 @@ int registro()// funcao responsavel por cadastrar usaurios no sistema
 	fclose(file);
 	
 	system("pause");
-
-	
+	system("cls");	
 }
 
 int consulta()
@@ -122,7 +121,7 @@ int main()
 	int comparacao;
 	
 	printf("### Cartório da EBAC ###\n\n");
-	prinf("Login de administrador!\n\nDigite a senha: ");
+	printf("Login de administrador!\n\nDigite a senha: ");
 	scanf("%s",senhadigitada);
 	
 	comparacao = strcmp(senhadigitada, "admin");
@@ -132,8 +131,6 @@ int main()
 			system ("cls");	
 			for(x=1;x=1;)
 		{
-			system("cls");
-		
 			setlocale(LC_ALL, "Portuguese"); //Definindo a linguagem
 		
 			printf("### Cartório da EBAC ###\n\n"); //inicio do menu
@@ -180,5 +177,5 @@ int main()
 	}
 	
 	else
-		prinf("Senha Incorreta!");
+		printf("Senha Incorreta!");
 }
