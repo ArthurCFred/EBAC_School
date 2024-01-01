@@ -92,6 +92,7 @@ int consulta()
 	}
 	
 	system("pause");
+	system("cls");
 }
 
 
@@ -105,7 +106,9 @@ int deletar()
 	remove(cpf);
 	
 	FILE *file;
-	file = fopen(cpf, "r");
+	file = fopen(cpf, "r");	
+
+	system("pause");
 	
 	if (file == NULL)
 	{
@@ -163,15 +166,15 @@ int main()
 				break;
 			
 				case 4:
-				printf("\n\n################################################\nObrigado por utilizar o programa, volte sempre!\n################################################\n\n\n");
+				printf("\n\n################################################\n\nObrigado por utilizar o programa, volte sempre!\n\n################################################\n\n\n");
 				return 0;
 				break;
 			
 				default:
-				printf("Essa opção não está disponível!! \nObrigado, deseja tentar novamente?\n");
+				printf("Essa opção não está disponível!! \n\nObrigado, deseja tentar novamente?\n\n");
 				system("pause");
 				break;
-			}
+							}
 
 			printf("\n\n\n\n--> Esse Software é de livre uso dos alunos <--\n");
 		}
