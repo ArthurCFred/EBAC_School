@@ -13,6 +13,7 @@ int registro()// funcao responsavel por cadastrar usaurios no sistema
 	char nome[40];
 	char sobrenome[40];
 	char cargo[40];
+	int opcao=0;
 	
 	//final das variaveis/string
 	
@@ -62,7 +63,7 @@ int registro()// funcao responsavel por cadastrar usaurios no sistema
 	fclose(file);
 	
 	system("pause");
-	system("cls");	
+	system("cls");
 }
 
 int consulta()
